@@ -6,6 +6,10 @@
 //
 
 #import "ViewController.h"
+// 桥接模式
+#import "CommonRemote.h"
+#import "XiaoMiTV.h"
+#import "AppleTV.h"
 
 @interface ViewController ()
 
@@ -15,7 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // 桥接模式
+    CommonRemote *remote = [[CommonRemote alloc] init];
+    remote.tv = [[XiaoMiTV alloc] init];
+    [remote up];
+    
+    remote.tv = [[AppleTV alloc] init];
+    [remote down];
 }
 
 

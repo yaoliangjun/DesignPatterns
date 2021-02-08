@@ -14,6 +14,11 @@
 		4F643A1225C957D10000256B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F643A1125C957D10000256B /* Assets.xcassets */; };
 		4F643A1525C957D10000256B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F643A1325C957D10000256B /* LaunchScreen.storyboard */; };
 		4F643A1825C957D10000256B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A1725C957D10000256B /* main.m */; };
+		4F643A2425C958580000256B /* Remote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A2325C958580000256B /* Remote.m */; };
+		4F643A2825C958730000256B /* CommonRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A2725C958730000256B /* CommonRemote.m */; };
+		4F643A2C25C958910000256B /* TV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A2B25C958910000256B /* TV.m */; };
+		4F643A3025C958B80000256B /* XiaoMiTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A2F25C958B80000256B /* XiaoMiTV.m */; };
+		4F643A3425C958C80000256B /* AppleTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F643A3325C958C80000256B /* AppleTV.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,16 @@
 		4F643A1425C957D10000256B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F643A1625C957D10000256B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F643A1725C957D10000256B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F643A2225C958580000256B /* Remote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Remote.h; sourceTree = "<group>"; };
+		4F643A2325C958580000256B /* Remote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Remote.m; sourceTree = "<group>"; };
+		4F643A2625C958730000256B /* CommonRemote.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonRemote.h; sourceTree = "<group>"; };
+		4F643A2725C958730000256B /* CommonRemote.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonRemote.m; sourceTree = "<group>"; };
+		4F643A2A25C958910000256B /* TV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TV.h; sourceTree = "<group>"; };
+		4F643A2B25C958910000256B /* TV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TV.m; sourceTree = "<group>"; };
+		4F643A2E25C958B80000256B /* XiaoMiTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XiaoMiTV.h; sourceTree = "<group>"; };
+		4F643A2F25C958B80000256B /* XiaoMiTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XiaoMiTV.m; sourceTree = "<group>"; };
+		4F643A3225C958C80000256B /* AppleTV.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppleTV.h; sourceTree = "<group>"; };
+		4F643A3325C958C80000256B /* AppleTV.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppleTV.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +76,7 @@
 		4F643A0425C957CF0000256B /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4F643A2025C957F10000256B /* 1、桥接模式 */,
 				4F643A0525C957CF0000256B /* AppDelegate.h */,
 				4F643A0625C957CF0000256B /* AppDelegate.m */,
 				4F643A0825C957CF0000256B /* SceneDelegate.h */,
@@ -74,6 +90,23 @@
 				4F643A1725C957D10000256B /* main.m */,
 			);
 			path = "设计模式";
+			sourceTree = "<group>";
+		};
+		4F643A2025C957F10000256B /* 1、桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				4F643A2225C958580000256B /* Remote.h */,
+				4F643A2325C958580000256B /* Remote.m */,
+				4F643A2625C958730000256B /* CommonRemote.h */,
+				4F643A2725C958730000256B /* CommonRemote.m */,
+				4F643A2A25C958910000256B /* TV.h */,
+				4F643A2B25C958910000256B /* TV.m */,
+				4F643A2E25C958B80000256B /* XiaoMiTV.h */,
+				4F643A2F25C958B80000256B /* XiaoMiTV.m */,
+				4F643A3225C958C80000256B /* AppleTV.h */,
+				4F643A3325C958C80000256B /* AppleTV.m */,
+			);
+			path = "1、桥接模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +178,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F643A3425C958C80000256B /* AppleTV.m in Sources */,
+				4F643A2825C958730000256B /* CommonRemote.m in Sources */,
+				4F643A2425C958580000256B /* Remote.m in Sources */,
+				4F643A2C25C958910000256B /* TV.m in Sources */,
 				4F643A0D25C957CF0000256B /* ViewController.m in Sources */,
 				4F643A0725C957CF0000256B /* AppDelegate.m in Sources */,
 				4F643A1825C957D10000256B /* main.m in Sources */,
+				4F643A3025C958B80000256B /* XiaoMiTV.m in Sources */,
 				4F643A0A25C957CF0000256B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,7 +263,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
